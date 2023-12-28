@@ -1,0 +1,38 @@
+
+body {
+    border: 1px solid black;
+    font-size: 22px;
+    /* Siempre el mismo valor */
+    padding: 1em;
+}
+
+#container {
+    /* border: 3px solid blue; */
+    height: 65vh;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    gap: 1em;
+}
+
+.caja1 {
+    flex: 1 67%;
+    display: grid;
+}
+
+.caja1 > ol {
+    border: 1px dotted blue;
+    margin: 0;
+    list-style: upper-roman;
+}
+
+.caja1 > div {
+    border: 1px dotted blue;
+}
+
+.caja2 {
+    border: 1px dotted red;
+
+    flex: 1 33%;
+}

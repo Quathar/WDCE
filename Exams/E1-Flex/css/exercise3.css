@@ -1,0 +1,35 @@
+* { margin: 0 auto }
+
+#container {
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px 0px blue;
+    margin: 30px auto;
+    width: 80%;
+    height: 30vmin;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.box {
+    border: 1px solid black;
+    height: 50%;
+}
+
+.box1 {
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+.box2 {
+    flex-grow: 2;
+    align-self: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.box3 {
+    flex-grow: 1;
+    align-self: flex-end;
+}

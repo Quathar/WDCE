@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptability Evaluation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <!--
+        Explicación de accesibilidad en esta web:
+
+        1.  Se utilizan las etiquetas naturales más convenientes en cado caso para que estas sean lo más
+            descriptivas posibles, por ejemplo para la cabecera se utiliza la etiqueta <header>, para el pie de página
+            la etiqueta <footer> o para los titulos <h1>, de manera que si alguien con poca capacidad visual necesitara un lector
+            estos elementos sería fácilmente identificables.
+        2.  La página es fácil de percibir, se distinguen las 3 partes de la página con claridad. 
+        3.  Por último, es fácil de operar, si alguien quisiera controlar el sonido del audio de fondo
+            o la reproducción de los vídeos sería sencillo de realizar.
+        4.  Los elementos (Logo, Audio, Video) tienen descripciones, se puede ver al pasar el ratón por encima.
+    -->
+   <header id="header">
+        <div id="brand">
+            <picture title="Clothesterdam Logo">
+                <!-- Resoluction 1: Up to 800px -->
+                <source type="image/png"
+                    media="(max-width: 800px)"
+                    srcset=" media/img/logo100.png 1x, media/img/logo90.png 2x">
+
+                <!-- Resoluction 2: Up to 1200px -->
+                <source type="image/png" 
+                    media="(max-width: 1200px)"
+                    srcset="media/img/logo70.png">
+                    <!-- sizes="(min-width: 800px) 70vw, 200px"> -->
+
+                <!-- Resoluction 3: From 1200px -->
+                <source type="image/png" 
+                    srcset="media/img/logo50.png" 
+                    sizes="150px">
+
+                <!-- Default image -->
+                <img src="media/img/landscape_color.jpg" alt="Clothesterdam Logo"/>
+            </picture>
+            <h1>Clothesterdam</h1>
+            <div id="square"></div>
+        </div>
+        <audio title="Main page background audio " autoplay muted loop controls>
+            <source src="media/aud/background.mp3" type="audio/mp3">
+            <source src="media/aud/background.ogg" type="audio/ogg">
+            Your browser does NOT support this HTML5 audio
+        </audio>
+    </header>
+    <main id="main">
+        <video class="video" width="800" height="450" loop controls title="Main page's first video from youtube" >
+            <source src="media/vid/clothes_ad.ogv" type="video/ogv">
+            <source src="media/vid/clothes_ad.mp4" type="video/mp4">
+            Your browser does NOT support this HTML5 video
+        </video>
+        <!-- In src attribute: to 'autoplay=1' 'mute=1' is required
+             AND to 'loop=1' 'playlist=video_ID' is required DO NOT DELETE -->
+        <iframe class="video" width="800" height="450" title="Main page's second video from youtube"
+            src="https://www.youtube.com/embed/s4xnyr2mCuI?&autoplay=1&mute=1&loop=1&playlist=s4xnyr2mCuI"
+            title="Be yourself" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </main>
+    <footer id="footer">
+       <div class="text">
+            COLECCIONES
+            <div class="item">Mujer</div>
+            <div class="item">Hombre</div>
+            <div class="item">Niños</div>
+       </div>
+       <div class="text">
+            INFORMACIÓN CORPORATIVA
+            <div class="item">Trabaja con nosotros</div>
+            <div class="item">Acerca de Clothesterdam</div>
+            <div class="item">Nuestra responsabilidad</div>
+       </div>
+       <div class="text">
+            AYUDA
+            <div class="item">Atención al cliente</div>
+            <div class="item">Nuestras tiendas</div>
+            <div class="item">Contáctanos</div>
+       </div>
+       <div class="text">
+            FOLLOW US
+            <div class="item">Facebook</div>
+            <div class="item">Twitter</div>
+            <div class="item">Instagram</div>
+       </div>
+    </footer>      
+</body>
+</html>
