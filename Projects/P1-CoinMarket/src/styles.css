@@ -1,0 +1,176 @@
+body {
+    background-color: rgb(23, 23, 26);
+}
+
+#container {
+    /* ======= CONTENEDOR ======= */
+    width: 100%;
+    height: 100%;
+    min-width: 45rem;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    justify-items: center;
+    /* border: 5px solid white; */
+}
+
+#imagen {
+    /* ======= CONTENEDOR.IMAGEN ======= */
+    display: grid;
+    width: 100.5%;
+    background-image: url("../img/tech.webp");
+    background-size: 17rem;
+    /* border-radius: 2rem; */
+    vertical-align: middle;
+    /* border: 3px solid rgb(0, 255, 0); */
+}
+
+#imagen>a {
+    /* ======= CONTENEDOR.IMAGEN.A ======= */
+    margin: auto;
+    color: white;
+    font-size: 6.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    /* border: 1px solid white; */
+}
+
+#cuerpo {
+    /* ======= CONTENEDOR.CUERPO ======= */
+    width: 100.5%;
+    background-image: linear-gradient(rgb(33, 36, 48), rgb(23, 23, 26), rgb(23, 23, 26));
+    display: grid;
+    grid-template-rows: 8% 50% 39%;
+    grid-gap: 1.5%;
+    justify-items: center;
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+
+#header {
+    /* ======= CONTENEDOR.CUERPO.HEADER ======= */
+    display: grid;
+    width: 80%;
+    text-align: center;
+    /* border: 3px solid yellow; */
+}
+
+#header>a {
+    margin: auto;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    min-width: 50%;
+    text-align: center;
+    text-decoration: none;
+    /* border: 3px solid; */
+}
+
+#table {
+    /* ======= CONTENEDOR.CUERPO.TABLE ======= */
+    width: 65%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas:
+        'a b c c'
+        'a d e f'
+        'a g h i';
+    grid-gap: 2%;
+    /* border: 3px solid rgb(128, 128, 0); */
+}
+
+.item {
+    /* ======= CONTENEDOR.CUERPO.TABLE.ITEM {i1....i9} ======= */
+    display: grid;
+    color: white;
+    border-radius: 1.5rem;
+    box-shadow: 4px 4px 1px rgb(255, 255, 255, 0.7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    /* border: 0.15rem rgb(128, 128, 128) solid; */
+}
+
+.cp {
+    margin: auto;
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+}
+
+#i1 {
+    grid-area: a;
+    background-image: url("../img/bitcoin.webp");
+    background-size: 16rem;
+}
+
+#i2 {
+    grid-area: b;
+    background-image: url("../img/bnb.jpg");
+    background-size: 10rem;
+}
+
+#i3 {
+    grid-area: c;
+    background-image: url("../img/ethereum.webp");
+    background-size: 16rem;
+}
+
+#i4 {
+    grid-area: d;
+    background-image: url("../img/usdt.jpg");
+    background-size: 15rem;
+}
+
+#i5 {
+    grid-area: e;
+    background-image: url("../img/dogggo.png");
+    background-size: 3rem;
+}
+
+#i6 {
+    grid-area: f;
+    background-image: url("../img/ada.jpg");
+    background-size: 15rem;
+}
+
+#i7 {
+    grid-area: g;
+    background-image: url("../img/xrp.jpg");
+    background-size: 14rem;
+}
+
+#i8 {
+    grid-area: h;
+    background-image: url("../img/doge.jpg");
+    background-size: 9rem;
+}
+
+#i9 {
+    grid-area: i;
+    background-image: url("../img/shib.jpg");
+    background-size: 11rem;
+}
+
+#textos {
+    /* ======= CONTENEDOR.CUERPO.TEXTOS ======= */
+    display: grid;
+    /**/
+    width: 70%;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    /* border: 3px solid cyan; */
+}
+
+.text {
+    margin-top: 4%;
+    width: 95%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    /* border: 2px solid wheat; */
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    color: white;
+}

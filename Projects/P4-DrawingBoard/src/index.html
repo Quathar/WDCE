@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DRAWING BOARD</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="keys">
+        <table width="500" border="1" summary="Control de entrada">
+            <caption>
+                Find out the keys to get into drawing
+            </caption>
+            <tr>
+                <td colspan="2">Palabra clave:</td>
+                <td colspan="4" align="center">
+                    <input id="key1" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center">Choose 3 options to enter</td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="checkbox" id="chk1" />
+                </td>
+                <td align="center">
+                    <input type="checkbox" id="chk2" />
+                </td>
+                <td align="center">
+                    <input type="checkbox" id="chk3" />
+                </td>
+                <td align="center">
+                    <input type="checkbox" id="chk4" />
+                </td>
+                <td align="center">
+                    <input type="checkbox" id="chk5" />
+                </td>
+                <td align="center">
+                    <input type="checkbox" id="chk6" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6"><input type="button" value="Entrar" onclick="validEntry()"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="controls">
+        <p>JAVASCRIPT DRAWING BOARD</p>
+        <table width="500" border="1" id="palet" summary="Tabla de selección de colores">
+            <caption>
+                Haga CLICK en un color para comenzar a pintar
+            </caption>
+            <tr>
+                <td class="color1" onclick="select('yellow')"></td>
+                <td class="color2" onclick="select('green')"></td>
+                <td class="color3" onclick="select('black')"></td>
+                <td class="color4" onclick="select('red')"></td>
+                <td class="color5" onclick="select('blue')"></td>
+                <td class="color6" onclick="select('white')"></td>
+            </tr>
+            <tr>
+                <td colspan="6" id="pincel">Brush condition</td>
+            </tr>
+        </table>
+        <p></p>
+    </div>
+    <div id="drawZone"></div>
+    <script type="text/javascript">
+        window.onload = activarTablero;
+    </script>
+</body>
+</html>
