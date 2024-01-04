@@ -1,0 +1,25 @@
+
+h3 {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    height: 25rem;
+    grid-auto-rows: 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-gap: 0.5rem;
+}
+
+.box {
+    border: 1px solid black;
+}
+
+.number {
+    background-color: rgb(161, 161, 161);
+}
+
+.god {
+    background-color: rgb(255, 191, 8);
+}

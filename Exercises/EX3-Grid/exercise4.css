@@ -1,0 +1,41 @@
+body{
+	margin: 0;	
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 20vh 1fr 20vh;
+	grid-gap: 5px;
+	grid-template-areas:
+		". . a a a a a a a . . ."
+		"b b b . c c c c c c c c"
+		". . . d d d d . . . . .";
+}
+
+.item {
+	background: #89ece1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container > header {
+	grid-area: a;
+}
+
+.container > main {
+	grid-area: c;
+	
+}
+
+.container > aside {
+	grid-area: b;
+	
+}
+
+.container > footer {
+	grid-area: d;
+	
+}

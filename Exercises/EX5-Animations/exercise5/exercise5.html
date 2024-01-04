@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+	<style>
+		body {
+			margin: 3em 10%;
+			background: aliceblue;
+		}
+
+		.ball:hover {
+			animation-name: ballmove;
+			animation-duration: 2s;
+			/* animation-iteration-count: infinite; */
+			animation-timing-function: ease-in-out;
+			animation-fill-mode: forwards;
+			animation-direction: alternate;
+		}
+
+		@keyframes ballmove {
+			0% {
+				transform: translateX(0) rotate(0);
+			}
+
+			100% {
+				transform: translateX(450px) rotate(2turn);
+			}
+		}
+
+		.ball {
+			animation-name: ballmove-left;
+			animation-duration: 2s;
+		}
+
+		@keyframes ballmove-left {
+			0% {
+				transform: translateX(450px) rotate(0);
+			}
+
+			100% {
+				transform: translateX(0) rotate(2turn);
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<img class="ball" src="img/ball.png" alt="ball" width="111" height="111" />
+
+</body>
+</html>

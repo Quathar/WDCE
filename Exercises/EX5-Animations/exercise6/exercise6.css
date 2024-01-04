@@ -1,0 +1,46 @@
+
+#container {
+    border: 2px solid black;
+    height: 50vh;
+    width: 40rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: red;
+    width: 5rem;
+    height: 5rem;
+}
+
+.box:hover {
+    background-color: blue;
+    color: yellow;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.5rem;
+
+    animation-name: boxAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes boxAnim {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(270deg); }
+}
+
+@keyframes move-right {
+    from { transform: translateX(0); }
+    to { transform: translateX(35rem); }
+}
+
+@keyframes move-left {
+    from { transform: translateX(35rem); }
+    to { transform: translateX(0); }
+}

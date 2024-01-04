@@ -1,0 +1,34 @@
+#titulo { color: rgb(0, 132, 131) }
+
+    p > strong { color: red }
+
+    .destacado { color: rgb(255, 163, 12) }
+
+#subtitulo { color: blue }
+
+body > p > a { color: red }
+
+    a > em { color: blue }
+
+    p > .especial { color: rgb(133, 1, 132) }
+    
+caption { color: blue }
+
+    .especial, strong { color:rgb(255, 163, 12) }
+
+    td { color: rgb(42, 129, 0) }
+
+    th { color: red }
+
+    table, td, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+#adicional { color: rgb(145, 134, 11) }
+
+    #especial { color: rgb(255, 0, 255) }
+
+    #adicional > p > a {
+        color: rgb(0, 131, 44);
+    }

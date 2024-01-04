@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+
+.rectangle {
+    border: 1px solid black;
+    width: 30rem;
+    height: 10rem;
+}
+
+#r1 {
+    background-color: green
+}
+
+#r2, #r3 {
+    background-color: grey
+}

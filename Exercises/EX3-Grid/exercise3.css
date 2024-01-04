@@ -1,0 +1,23 @@
+
+.row {
+    display: grid;
+    grid-gap: 0.2rem;
+}
+
+.row:nth-of-type(1) {
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+}
+
+.row:nth-of-type(2) {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+
+}
+
+.box {
+    background-color: rgb(255, 140, 0);
+    color: white;
+    height: 2rem;
+    display: grid;
+    align-items: center;
+    padding-left: 1rem;
+}

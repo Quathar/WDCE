@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  padding: 0;	
+}
+
+div.container{
+  margin: 0 auto;	
+  font-size: 16px;
+  max-width: 1024px;
+}
+
+div.container nav {
+  width: 100%;
+  background-color: green;  
+  padding: 1em;
+  box-sizing: border-box;
+  /* Importante para resolver el ejercicio */
+  grid-area: nav;
+}
+
+div.container article {
+  height: 31.25rem;
+  background-color: blue;
+  padding: 1em;
+  box-sizing: border-box;
+  background-image: url(img/content-is-like-water-5.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Importante para resolver el ejercicio */
+  grid-area: article;
+}
+
+div.container aside {
+  background-color: red;
+  padding: 1em;
+  font-size: 1em;
+  box-sizing: border-box;
+  /* Importante para resolver el ejercicio */
+  grid-area: aside; 
+}
+
+/* ALEX */
+@media screen and (max-width: 1200px) {
+
+  .container {
+    display: grid;
+    grid-template-areas:
+    'nav nav nav nav'
+    'article article article aside';
+  }
+
+  div.container aside { height: 3.25rem; }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  div.container article {
+    background-image: url(img/content-is-like-water-3.jpg);
+    height: 25rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  
+  .container {
+    grid-template-areas:
+    'nav'
+    'article'
+    'aside';
+  }
+
+  div.container article {
+    background-image: url(img/content-is-like-water-1.jpg);
+    height: 12.5rem;
+  }
+
+  div.container aside { height: 100%; }
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <picture>
+        <!-- Hasta 800px -->
+        <source media="(max-width:800px)" type="image/webp"
+                srcset="img/landscape_contrast.webp">
+        <source media="(max-width:800px)"
+                srcset="img/landscape_contrast.jpg">
+        
+        <!-- Hasta 1200px -->
+        <source media="(max-width:1200px)" type="image/webp"
+                srcset="img/landscape_color.webp">
+        <source media="(max-width:1200px)"
+                srcset="img/landscape_color.jpg">
+        
+        <!-- A partir de 1200px -->
+        <source type="image/webp"
+                srcset="img/landscape_original.jpg"
+                sizes="(min-width:1600px) 70vw, 1200px">
+        <source srcset="img/landscape_original.jpg 1.5x,
+                        img/landscape_original_1600.jpg 2x"
+                sizes="(min-width:1600px) 70vw, 1200px">
+        
+        <!-- Default image -->
+        <img srcset="img/landscape_original.jpg" alt="a landscape">
+    </picture>
+</body>
+</html>

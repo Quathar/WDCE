@@ -1,0 +1,22 @@
+
+#animation {
+    /* Para poder modificar las propiedades 'left' */
+    position: absolute;
+    border: 3px solid black;
+    width: 150px;
+
+    animation: rotateAnim 4s, move-to-right 4s;
+}
+
+@keyframes move-to-right {
+    from { left: 0; }
+    to { left: calc(100vw - 150px); }
+}
+
+@keyframes rotateAnim {
+    0%, 25% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+    65% { transform: rotate(180deg); }
+    80% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
